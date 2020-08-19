@@ -2,7 +2,7 @@ let phoneNumber = prompt("Please input phone number: ");
 alert('Your input: ' + phoneNumber + '\n' + 'Formatted: ' + formattedPhone(phoneNumber));
 
 function formattedPhone(phone) {
-    if (isPhoneLengthValid(phone)) {
+    if (isPhoneLengthNotValid(phone)) {
         return "Number length is wrong!";
     } else {
         let formattedPhoneNumber = '';
@@ -16,7 +16,7 @@ function formattedPhone(phone) {
     }
 }
 
-function isPhoneLengthValid(phone) {
+function isPhoneLengthNotValid(phone) {
     return phone.length < 12 || phone.length > 12;
 }
 
