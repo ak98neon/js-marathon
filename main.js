@@ -5,6 +5,7 @@ class Character {
         this.damageHp = damageHp;
     }
 
+    //A little crutch just for practice method overriding
     initHp() {
         throw new Error('You have to implement the method initHp!');
     }
